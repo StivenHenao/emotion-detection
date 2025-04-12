@@ -8,6 +8,9 @@ def sent_detector():
     text_to_analyze = request.args.get('textToAnalyze')
     response = emotion_detector(text_to_analyze)
 
+    if not text_to_analyze:
+        return "Invalid text! Please try again!"
+
     if not response or 'dominant_emotion' not in response:
         return "Invalid response from emotion detector. Please try again."
 
@@ -26,4 +29,4 @@ def render_index_page():
     return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5001)
