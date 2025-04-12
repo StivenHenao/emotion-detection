@@ -36,9 +36,10 @@ It also determines the **dominant emotion** based on the highest score.
     
 4.  Open your browser and visit:  
     [http://localhost:5000](http://localhost:5001)
-    
 
-## 📄 Project Structure
+## 📁 Project Structure
+
+```
 emotion-detection/
 ├── .gitignore
 ├── LICENSE
@@ -54,6 +55,9 @@ emotion-detection/
 │   └── index.html
 ├── test_emotion_detection.py
 └── __pycache__/
+```
+
+    
 
 ## 🧪 Running Tests
 
